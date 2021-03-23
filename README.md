@@ -1,10 +1,10 @@
 # Document-based-database
 Implemented using Python
 
-Objectives
+**Objectives**
 The objectives of this homework are to first, gain experience with how a database works by reading and parsing data from a CSV file and then interpreting the information into a .data file, and then also to gain experience with adding, deleting, and updating records in a database
 
-Approach
+**Approach**
 I implemented this program using Python 3.0. I used this language because I saw that there is a CSV parsing library available to me in Python that would help make things much easier for me in terms of reading the CSV file and then formatting my data from it. My design is basically as simple as I could possibly make it. The print statement with the main menu options 1-9 at the top of the program, the actual functions from the menu below that, and then the helper functions at the very bottom.
 
 I chose this format coming directly from my config file:
