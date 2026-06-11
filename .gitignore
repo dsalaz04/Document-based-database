@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Database artifacts produced by demos/tests
+build/
+*.data
+*.config
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

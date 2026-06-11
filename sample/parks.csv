@@ -1,0 +1,11 @@
+ID,Region,State,Code,Name,Type,Visitors
+4,PW,CA,YOSE,Yosemite National Park,National Park,3667550
+15,IM,AZ,GRCA,Grand Canyon National Park,National Park,4732101
+22,IM,UT,ZION,Zion National Park,National Park,4692417
+31,PW,CA,SEKI,Sequoia National Park,National Park,1059548
+48,SE,TN,GRSM,Great Smoky Mountains National Park,National Park,12937633
+57,IM,WY,YELL,Yellowstone National Park,National Park,4860242
+63,IM,CO,ROMO,Rocky Mountain National Park,National Park,4434848
+79,AK,AK,DENA,Denali National Park,National Park,594660
+88,NE,ME,ACAD,Acadia National Park,National Park,3537575
+96,IM,MT,GLAC,Glacier National Park,National Park,2946681
