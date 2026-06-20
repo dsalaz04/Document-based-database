@@ -87,26 +87,6 @@ python3 -m docdb menu parks
 | `compact` | Drop tombstones and rewrite the file |
 | `menu`    | Interactive 1–9 menu |
 
-## What changed from the original
-
-The original `Database.py` was a single 500-line menu app. The behavior is preserved, but:
-
-- **Schema-generic.** The original hard-coded the national-parks fields and column widths
-  (`2,2,4,83,37,9`) in its add/update paths, so it only worked for one CSV. Layout is now
-  derived entirely from the config, so it works for any CSV.
-- **Correct fixed-width padding.** The original padded with `ljust(width - len(value))`,
-  which (since `ljust` takes a *total* width) effectively did nothing — records weren't
-  reliably padded to a fixed size, undermining the seek/binary-search premise. Fixed.
-- **Real error handling.** Bare `except:` blocks that reported every failure as "please
-  open the database first" are replaced with typed exceptions (`RecordNotFound`,
-  `DuplicateKey`, `FieldError`, ...).
-- **Robust I/O.** Files are opened via context managers in binary mode with explicit
-  newlines, instead of leaking a fresh handle on every read and relying on a per-OS
-  newline-size fudge factor.
-- **Scriptable + testable.** A real `argparse` CLI sits alongside the interactive menu,
-  and a stdlib `unittest` suite covers import, CRUD, binary search across tombstones, and
-  compaction.
-
 ## Project structure
 
 ```
